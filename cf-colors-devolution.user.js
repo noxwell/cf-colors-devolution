@@ -1,7 +1,7 @@
 ﻿// ==UserScript==
 // @id             cf-colors-devolution
 // @name           CF de-Revolution of Colors
-// @version        0.1.2
+// @version        0.1.3
 // @namespace      https://github.com/noxwell/cf-colors-devolution
 // @updateURL      https://noxwell.github.io/files/cf-colors-devolution.meta.js
 // @downloadURL    https://noxwell.github.io/files/cf-colors-devolution.user.js
@@ -41,7 +41,7 @@ old_script = old_script.replace(/(\$\.plot\(\$\(\"\#)(placeholder)(\"\))/, "$1ol
 //console.log(window.old_script);
 placeholder.after("<div id=\"old_placeholder\" style=\"width:100%;height:300px;\"></div>");
 if(lang == "en")
-  placeholder.after("<p>Before revolution of colors:</p>");
+  placeholder.after("<br /><p>Before revolution of colors:</p>");
 else
   placeholder.after("<br /><p>До революции цветов:</p>");
 eval(old_script);
